@@ -1,10 +1,10 @@
 {% extends 'base.html'%}
 {% block content%}   
-<h1>Caesar Cipher Encryption</h1>
+<h1>Encrypt a Message</h1>
     <form method="POST">
-      <label for="plaintext">Plaintext:</label><br>
+      <label for="plaintext">Message:</label><br>
       <textarea name="plaintext" id="plaintext" rows="4" cols="50" required></textarea><br><br>
-      <label for="key">Key:</label>
+      <label for="key">Cipher:</label>
       <input type="number" name="key" id="key" required><br><br>
       <input type="submit" value="Encrypt">
     </form>

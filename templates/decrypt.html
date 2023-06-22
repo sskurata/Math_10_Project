@@ -1,10 +1,10 @@
 {% extends 'base.html'%}
 {% block content%}   
-<h1>Decipher Message</h1>
+<h1>Decipher a Message</h1>
     <form method="POST">
-      <label for="ciphertext">Ciphertext:</label><br>
+      <label for="ciphertext">Encrypted Message:</label><br>
       <textarea name="ciphertext" id="ciphertext" rows="4" cols="50" required></textarea><br><br>
-      <label for="key">Key:</label>
+      <label for="key">Cipher:</label>
       <input type="number" name="key" id="key" required><br><br>
       <input type="submit" value="Decipher">
     </form>
