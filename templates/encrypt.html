@@ -1,0 +1,15 @@
+{% extends 'base.html'%}
+{% block content%}   
+<h1>Caesar Cipher Encryption</h1>
+    <form method="POST">
+      <label for="plaintext">Plaintext:</label><br>
+      <textarea name="plaintext" id="plaintext" rows="4" cols="50" required></textarea><br><br>
+      <label for="key">Key:</label>
+      <input type="number" name="key" id="key" required><br><br>
+      <input type="submit" value="Encrypt">
+    </form>
+    {% if encrypted_message %}
+    <h2>Encrypted Message:</h2>
+    <p>{{ encrypted_message }}</p>
+    {% endif %}
+{% endblock %}
